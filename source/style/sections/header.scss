@@ -5,3 +5,55 @@
 	position: relative;	
 	border: 2px solid $black;
 }*/
+
+.header {
+	color: $white;
+	font-family: Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+
+	& a {
+		color: $white;
+	}
+}
+
+.header__bg {
+	background-image: url("../img/bg/bg-header.jpg");
+	background-repeat: no-repeat;
+	position: absolute;
+	/*top: 0;
+	left: 0;*/
+}
+
+.header__logo, .header__nav {
+	float: left;
+}
+
+.header__logo {
+	margin-top: 31px;
+	margin-bottom: 106px;
+}
+
+.header__nav {
+	margin-left: 69px;
+	margin-top: 20px;
+	margin-bottom: 70px;
+
+	& li {
+		margin-top: 5px;
+		border-bottom: 1px dashed $white;	
+	}
+
+	& li:first-child {
+		margin-top: 0;
+	}
+}
+
+.header__contacts {
+	float: right;
+	width: 301px;
+}
+
+.worktime-day {
+	
+}

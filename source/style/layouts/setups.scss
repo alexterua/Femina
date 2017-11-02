@@ -21,8 +21,8 @@ html {
 }
 
 body {
-	//width: 100%;
-	width: 1251px;
+	width: 100%;
+	//width: 1251px;
 	height: 100%;
 	background-color: $white;
 	margin: 0 auto;
@@ -84,10 +84,19 @@ a {
 	text-decoration: none;
 }
 
-/*.clearfix {
-	&:after {
+.container {
+	width: 1251px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clearfix {
+	&:after, &:before {
+		display: table;
 		content: "";
-		display: block;
-		height: $h_footer;
 	}
-}*/
+
+	&:after {
+		clear: both;
+	}
+}
