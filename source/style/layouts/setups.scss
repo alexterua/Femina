@@ -36,14 +36,14 @@ body {
 	min-height: 100%;	
 	overflow: hidden; // чтобы не появлялся горизонтальный скролл
 	position: relative; // точка отсчета для абсолютов
-	border: 3px solid green; // test
+	//border: 3px solid green; // test
 }
 
 header {
 	width: 100%;
 	position: relative;
 	height: $h_header;
-	border: 2px solid red; // test
+	//border: 2px solid red; // test
 }
 
 footer {
@@ -52,7 +52,7 @@ footer {
 	height: $h_footer;
 	margin-top: - $h_footer; // прибитие футера
 	position: relative; // приоритет z-index с .wrapper
-	border: 2px solid blue; // test
+	//border: 2px solid blue; // test
 }
 
 .empty {
