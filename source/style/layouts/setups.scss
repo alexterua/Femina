@@ -89,14 +89,3 @@ a {
 	margin: 0 auto;
 	position: relative;
 }
-
-.clearfix {
-	&:after, &:before {
-		display: table;
-		content: "";
-	}
-
-	&:after {
-		clear: both;
-	}
-}

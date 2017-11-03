@@ -7,10 +7,12 @@
 }*/
 
 .header {
+	position: relative;
 	color: $white;
 	font-family: Calibri, sans-serif;
 	font-weight: bold;
 	font-size: 15px;
+	@include clearfix;
 
 	& a {
 		color: $white;
@@ -18,11 +20,10 @@
 }
 
 .header__bg {
+	margin: 0 auto;	
 	background-image: url("../img/bg/bg-header.jpg");
-	background-repeat: no-repeat;
-	position: absolute;
-	/*top: 0;
-	left: 0;*/
+	background-repeat: no-repeat;	
+	@include clearfix;
 }
 
 .header__logo, .header__nav {
@@ -35,25 +36,43 @@
 }
 
 .header__nav {
-	margin-left: 69px;
+	margin-left: 40px;
 	margin-top: 20px;
 	margin-bottom: 70px;
 
+	& a:hover {
+		font-size: 16px;
+		transition: 0.2s ease;
+	}
+
 	& li {
 		margin-top: 5px;
-		border-bottom: 1px dashed $white;	
+		border-bottom: 1px dashed $header-li-border;
 	}
 
 	& li:first-child {
 		margin-top: 0;
 	}
+
+	& li:last-child {
+		border-bottom: none;
+	}
 }
 
-.header__contacts {
+.header__contacts {	
 	float: right;
-	width: 301px;
+	padding-top: 12px;
 }
 
-.worktime-day {
-	
+.header__contacts--worktime, .header__contacts--phone {
+	font-size: 20px;
+}
+
+.header__contacts--worktime {
+	padding-bottom: 32px;
+	@include clearfix;
+}
+
+.header__contacts--phone {	
+	padding-bottom: 25px;
 }

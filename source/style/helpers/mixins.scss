@@ -1,3 +1,5 @@
+// выравнивания
+
 @mixin centered($axis: 'both') {
 	position: absolute;
 
@@ -19,7 +21,9 @@
 
 }
 
-%clearfix {
+// отмена обтекания
+
+@mixin clearfix {
 	&:before, &:after {	
 		content: "";
 		display: table;		
@@ -29,7 +33,7 @@
 	}
 }
 
-//миксины для контрольных точек
+// миксины для контрольных точек
 
 @mixin desktop() {
 	@media screen and (max-width: 1200px) {
