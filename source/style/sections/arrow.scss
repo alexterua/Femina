@@ -6,5 +6,17 @@
     border-top: 6px solid transparent;
     border-left: 9px solid $header-nav-arrow;
     margin: 0 auto;
+}
 
+.arrow-left {
+    width: 47px;
+    height: 47px;
+    float: left;   
+}
+
+.arrow-right {
+    width: 47px;
+    height: 47px;
+    float: right;
+    
 }
