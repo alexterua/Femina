@@ -1,7 +1,31 @@
-/*.content {	
-	width: 100%;
-	height: $h_content;
-	overflow: hidden;
-	position: relative;	
-	border: 2px solid $black;
-}*/
+.content {		
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: $content-text;	
+	@include clearfix;		
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+h3 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+h4 {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+}

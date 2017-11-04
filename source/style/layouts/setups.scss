@@ -35,15 +35,13 @@ body {
 .wrapper {
 	min-height: 100%;	
 	overflow: hidden; // чтобы не появлялся горизонтальный скролл
-	position: relative; // точка отсчета для абсолютов
-	//border: 3px solid green; // test
+	position: relative; // точка отсчета для абсолютов	
 }
 
 header {
 	width: 100%;
 	position: relative;
-	height: $h_header;
-	//border: 2px solid red; // test
+	height: $h_header;	
 }
 
 footer {
@@ -51,8 +49,7 @@ footer {
 	position: relative;
 	height: $h_footer;
 	margin-top: - $h_footer; // прибитие футера
-	position: relative; // приоритет z-index с .wrapper
-	//border: 2px solid blue; // test
+	position: relative; // приоритет z-index с .wrapper	
 }
 
 .empty {
@@ -87,5 +84,5 @@ a {
 .container {
 	width: 1251px;
 	margin: 0 auto;
-	position: relative;
+	position: relative;	
 }
