@@ -23,7 +23,6 @@
 	margin: 0 auto;	
 	background-image: url("../img/bg/bg-header.jpg");
 	background-repeat: no-repeat;	
-	@include clearfix;
 }
 
 .header__logo, .header__nav {
