@@ -1,43 +1,33 @@
 .content__directions {
-    width: 100%;
-    padding-top: 0;
-    margin-bottom: 0;
+    width: 100%;    
     min-height: 638px;    
 }
 
 .content__directions--top {    
     height: 90px;
     padding-top: 28px;
+    padding-bottom: 48px;
 
     & h2 {        
         text-transform: uppercase;        
-        text-align: center;
-        width: 1157px;
-        height: 47px;
-        margin: 0 auto;
-        float: left;
-          
-           
+        text-align: center;        
     }
 }
 
 .content__directions--slider {
-     text-align: center;
-     margin-top: 0px;
-     color: #323232;
-     @include clearfix;
+     width: 1251px;
+     color: #323232;         
 }
 
 .directions {    
     width: 240px;
-    height: 484px;
+    height: 483px;
     float: left;
-    margin-right: 12px;
-    border: 2px solid #e3740e;
-    
-    &:last-child {
-        margin-right: 0;
-    }
+    margin-right: 6px;
+    margin-left: 6px;
+    border: 2px solid #e3740e; 
+    text-align: center;
+    outline: none;
     
     & h3 {
         padding: 15px;
@@ -58,4 +48,63 @@
         max-height: 225px;
     }
     
+}
+
+/*Стили для слайдера*/
+.slider__directions { 
+    
+    .slick-prev, .slick-next {
+        top: -15%;       
+    }
+
+    .slick-prev {
+        display: inline-block;
+        background-image: url("../img/icons/dir1.png");
+        background-repeat: no-repeat;
+        border: 47px solid;        
+        margin: 0 auto;
+        left: -45px;
+        
+        &:hover {
+            background-image: url("../img/icons/dir1.png");
+            background-repeat: no-repeat;
+        }
+
+        &:focus {
+            background-image: url("../img/icons/dir1.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    .slick-next {
+        display: inline-block;        
+        background-image: url("../img/icons/dir2.png");
+        background-repeat: no-repeat;        
+        border: 47px solid;
+        margin: 0 auto;
+        right: 3px;
+
+        &:hover {
+            background-image: url("../img/icons/dir2.png");
+            background-repeat: no-repeat;
+        }
+
+        &:focus {
+            background-image: url("../img/icons/dir2.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    .slick-prev:before {
+        content: "";
+        width: 47px;
+        height: 47px;              
+    }
+
+    .slick-next:before {
+        content: "";
+        width: 27.5px;
+        height: 27.5px;              
+    }    
 }

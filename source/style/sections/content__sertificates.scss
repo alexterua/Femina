@@ -24,27 +24,18 @@
     margin-left: 45px;
     color: #323232;
     text-align: center;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    outline: none;
 
     & h2 {
         color: #323232;
     }
-}
 
-.sertificates__arrow--left {
-    float: left;
-    width: 28px;
-    height: 33px;
-    margin-right: 28px;
-}
-
-.sertificates__arrow--right {
-    float: right;
-    width: 28px;
-    height: 33px;  
+    & img {
+        padding: 0;
+        margin: 0;
+        max-width: 218px;
+        max-height: 315px;
+    }
 }
 
 /*Стили для слайдера*/
