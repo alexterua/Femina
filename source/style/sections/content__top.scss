@@ -43,7 +43,10 @@
         color: $content-text;        
         padding-top: 7px;        
         padding-bottom: 7px;
-         
+
+        &:hover {            
+            color: $header-li-border;
+        }
     }
     
     

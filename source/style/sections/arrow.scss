@@ -20,3 +20,39 @@
     float: right;
     
 }
+
+.arrow-head {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    position: relative;
+    /*border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 9px solid $header-nav-arrow;*/
+    
+}
+
+.arrow-head::before, .arrow-head::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-right: 0;
+}
+
+.arrow-head:nth-child(1) {
+    width: 18px;
+    height: 3px;    
+    background-color: $header-nav-arrow;
+}
+
+.arrow-head:nth-child(1)::after {
+    top: -5.5px;
+    right: -5px;
+    border-left-color: $header-nav-arrow;
+}
