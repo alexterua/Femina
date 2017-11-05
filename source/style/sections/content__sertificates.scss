@@ -11,20 +11,26 @@
 }
 
 .content__sertificates--slider {
-    text-align: center;    
-    @include clearfix;
+    width: 1251px;
+    padding-right: 64px;
+    padding-left: 64px;
 }
 
 .sertificates {
     float: left;
     width: 207px;
     height: 312px;    
-    margin-right: 84px;
+    margin-right: 45px;
+    margin-left: 45px;
     color: #323232;
     text-align: center;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    & h2 {
+        color: #323232;
     }
 }
 
@@ -39,4 +45,42 @@
     float: right;
     width: 28px;
     height: 33px;  
+}
+
+/*Стили для слайдера*/
+.slider__sertificates {    
+    .slick-prev {
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        border-right: 33px solid #929292;
+        margin: 0 auto;
+        left: -55px;        
+    }
+
+    .slick-next {
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        border-left: 33px solid #e3740e;
+        margin: 0 auto;
+        right: -50px; 
+    }
+
+
+    .slick-prev:before {
+        content: "";
+        width: 28px;
+        height: 33px;
+    }
+
+    .slick-next:before {
+        content: "";
+        width: 28px;
+        height: 33px;
+    }
 }
