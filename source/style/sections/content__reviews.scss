@@ -56,13 +56,14 @@
     background-image: url("../img/icons/rew1.png");
 }
 
-.reviews-main {
+.reviews-main {    
     width: 683px;
     height: 106px;
     float: right;
 }
 
 .reviews-main-name {
+    display: block;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
@@ -70,11 +71,14 @@
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
+    color: #323232;  
 }
 
 .reviews-main-comment {
+    display: block;
     padding-left: 15px;
     padding-right: 15px;
+    color: #595959;
 }
 
