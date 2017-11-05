@@ -1,0 +1,41 @@
+.content__sertificates {
+    width: 100%;    
+    height: 465px;
+}
+
+.content__sertificates--top {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+.content__sertificates--slider {
+    text-align: center;    
+    @include clearfix;
+}
+
+.sertificates {
+    float: left;
+    width: 207px;
+    height: 312px;    
+    margin-right: 84px;
+    color: #323232;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.sertificates__arrow--left {
+    float: left;
+    width: 28px;
+    height: 33px;
+    margin-right: 28px;
+}
+
+.sertificates__arrow--right {
+    float: right;
+    width: 28px;
+    height: 33px;  
+}
