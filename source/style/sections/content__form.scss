@@ -1,0 +1,47 @@
+.content__form {
+    width: 100%;
+    height: 106px;
+    background-color: #ececec;
+}
+
+.content__form--container {
+    
+}
+
+.form__description {
+    display: block;    
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 42px;
+}
+
+.form__block {
+    padding-top: 30px;
+    display: block;
+    float: right;
+
+    & input {
+        margin-left: 40px;
+        width: 278px;
+        height: 50px;
+        padding-left: 22px;        
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #797979;        
+    }
+
+    .button {
+        background-color: #ec7c0e;
+        border-color: #ec7c0e;
+        font-size: 18px;
+        font-weight: bold;
+        color: $white;
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+
+    
+}
