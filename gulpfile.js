@@ -32,9 +32,9 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'copy:fonts',
-    'css:foundation',
+    'css:foundation'
     /*'sprite:svg',*/
-    'sprite:png'
+    /*'sprite:png'*/
   ),
   $.gulp.parallel(
     'watch',

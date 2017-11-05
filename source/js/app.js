@@ -1,14 +1,10 @@
-/*$(function() {  
+$(function() {  
 
-  var hf = function() {
-    var h_header = $('header').height();
-    var h_footer = $('footer').height();
-    $('.content').css({
-      'paddingTop': h_header,
-      'paddingBottom': h_footer
-    });
-  }
+  $('.slider').slick({  
+  infinite: true,  
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  variableWidth: true   
+  });
 
-  $(window).bind('load resize', hf);
-
-});*/
+});

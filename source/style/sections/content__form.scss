@@ -44,5 +44,10 @@
         text-transform: uppercase;
         padding-left: 0;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: darken($color: #ec7c0e, $amount: 5%);
+        }
     }        
 }

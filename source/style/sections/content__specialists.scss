@@ -12,37 +12,25 @@
 }
 
 .content__specialists--slider {
-    text-align: center;    
-    @include clearfix;    
-}
-
-.specialists__arrow--left {
-    float: left;
-    width: 28px;
-    height: 33px;
-    margin-right: 28px;
-}
-
-.specialists__arrow--right {
-    float: right;
-    width: 28px;
-    height: 33px;    
+    width: 1251px;
+    padding-right: 52px;
+    padding-left: 52px;
 }
 
 .specialists {
     float: left;
     width: 255px;
-    height: 420px;
+    height: 416px;
+    margin-right: 20px;
+    margin-left: 20px;
     border: 2px solid #e3740e;
-    margin-right: 36px;
     color: #323232;
     text-align: center;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    outline: none;    
 
     & img {
+        padding: 0;
+        margin: 0;
         max-width: 251px;
         max-height: 232px;
     }
@@ -59,6 +47,7 @@
         padding-left: 36px;
         padding-bottom: 10px;
     }
+
 }
 
 .container__button {
@@ -83,5 +72,43 @@
         font-size: 15px;
         color: $white;
         padding-top: 5px;
+    }
+}
+
+/*Стили для слайдера*/
+.slider {
+    .slick-prev {
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        border-right: 33px solid #929292;
+        margin: 0 auto;
+        left: -55px;        
+    }
+
+    .slick-next {
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        border-left: 33px solid #e3740e;
+        margin: 0 auto;
+        right: -50px; 
+    }
+
+
+    .slick-prev:before {
+        content: "";
+        width: 28px;
+        height: 33px;
+    }
+
+    .slick-next:before {
+        content: "";
+        width: 28px;
+        height: 33px;
     }
 }
