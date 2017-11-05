@@ -67,7 +67,22 @@
     position: relative;    
 }
 
-.triangle {
+.content__hero--right-border::after, .content__hero--right-border::before {
+    content: "";
+    position: absolute;
+    left: -190px;
+    bottom: 200px;
+    border: 75px solid transparent;
+    border-right: 115px solid #9d9d9d;
+}
+
+.content__hero--right-border::after {
+    border-right: 114px solid white;
+    bottom: 200px;
+    left: -184px;
+}
+
+/*.triangle {
     display: inline-block;
     position: absolute;
     width: 0;
@@ -80,5 +95,5 @@
     top: 95px;
     left: 403px;
     opacity: .8;   
-}
+}*/
 // 76x118
