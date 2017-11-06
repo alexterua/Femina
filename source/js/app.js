@@ -24,10 +24,8 @@ $(function() {
   $('.slider__reviews').slick({  
     infinite: true,  
     slidesToShow: 2,
-    slidesToScroll: 1,
-    variableWidth: true,
-    vertical: true,
-    rows: 2   
+    slidesToScroll: 1,    
+    vertical: true,      
     });
 
 });
