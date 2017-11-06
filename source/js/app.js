@@ -22,10 +22,10 @@ $(function() {
     });
 
   $('.slider__reviews').slick({  
-    infinite: true,  
+    infinite: false,  
     slidesToShow: 2,
     slidesToScroll: 1,    
-    vertical: true,      
+    vertical: true    
     });
 
 });

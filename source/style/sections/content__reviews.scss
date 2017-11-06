@@ -15,14 +15,14 @@
 .content__reviews--slider {
     display: block;
     width: 805px;
-    /*height: 335px;*/
+    height: 335px;
     margin: 0 auto;   
 }
 
 .reviews__block {
     width: 803px;
     height: 110px;
-    margin-bottom: 32px;       
+    margin-bottom: 37px;       
     background-color: $white;
     border: 1px solid #7b7b7b !important;
 }
@@ -68,14 +68,15 @@
 }
 
 /*Стили для слайдера*/
-.slider__reviews {
+.slider__reviews {   
+    
 
     .slick-prev {
-        top: -10%;    
+        top: -9%;    
     }
 
     .slick-next {
-        top: 99%;
+        top: 97%;
     }
 
     .slick-prev {
