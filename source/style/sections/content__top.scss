@@ -6,11 +6,8 @@
 }
 
 .content__top--menu {
-    width: 320px;    
-    padding-left: 0;
-    margin: 0;
-    float: left;
-    /*position: absolute;*/
+    width: 318px;    
+    float: left;    
     font-family: Calibri, sans-serif;
     font-size: 16px;
     color: $content-text;
@@ -23,7 +20,7 @@
 
     & ul {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 18px;                     
 
         & li {
             border-bottom: 1px dashed #c1c1c1;
@@ -41,8 +38,9 @@
     & a {
         display: block;
         color: $content-text;        
-        padding-top: 7px;        
-        padding-bottom: 7px;
+        padding-top: 11px;        
+        
+        height: 35px;
 
         &:hover {            
             color: $header-li-border;
@@ -53,43 +51,64 @@
 }
 
 .content__top--menu-border {
-    width: 320px;
+    width: 318px;
     height: 306px;
     border: 1px solid #eb7c10;
-    border-radius: 10px;  
+    border-radius: 10px;
+    margin-left: -2px;
+    margin-top: -3px; 
 }
 
 .content__top--about {
     width: 900px;
     float: right;
-
-    & p {
-        margin-top: 28px;
-    }
 }
 
 .about__description {
-    width: 628px;
+    width: 628px;    
     float: left;
+    margin-left: 2px;
+    margin-top: -3px;
+
+    & h1 {
+        margin-bottom: 17px;
+    }
+
+    & p {
+        display: block;
+        padding-bottom: 15px;
+        line-height: 28px;        
+
+        &:nth-child(2) {
+            line-height: 28px;
+            padding-bottom: 13px;
+        }
+    }
 }
 
 .about__hero {
-    width: 255px;
-    height: inherit;
-    float: right;
+    width: 254px;    
+    float: left;
 
     & figure {
         margin: 0;
+        /*padding-left: 15px;
+        padding-bottom: -10px;  */    
     }
 
     & figcaption {
         text-align: center;
+        padding-left: 20px;
+        line-height: 28px;        
     }
     
     & img {
         max-width: 254px;
         max-height: 238px;
-        border: 2px solid #eb7c10;      
+        border: 2px solid #eb7c10;
+        margin-left: 15px;
+        margin-top: -5px;
+        margin-bottom: 8px;                 
     }
 }
 
